@@ -4,29 +4,7 @@
 #include <ctype.h>
 
 void proceso(int);
-void contarLetras(char *string, int *arr){
-    int i = 0;
-    
-    while(string[i] != '\0'){
-        if(string[i] == 'A' || string[i] == 'a'){
-            arr[0] += 1;
-        }
-        
-        if(string[i] == 'C' || string[i] == 'c'){
-            arr[1] += 1;
-        }
-        
-        if(string[i] == 'G' || string[i] == 'g'){
-            arr[2] += 1;
-        }
-        
-        if(string[i] == 'T' || string[i] == 't'){
-            arr[3] += 1;
-        }
-        
-        i++;
-    }
-}
+void contarLetras(char*, int*);
 
 int main(){
     int n;
@@ -58,4 +36,28 @@ void proceso(int n){
         letras[3] = 0;
     }
     
+}
+
+void contarLetras(char *string, int *arr){
+    int i = 0;
+    
+    while(string[i] != '\0'){
+        if(string[i] == 'A' || string[i] == 'a'){
+            arr[0] += 1;
+        }
+        
+        if(string[i] == 'C' || string[i] == 'c'){
+            arr[1] += 1;
+        }
+        
+        if(string[i] == 'G' || string[i] == 'g'){
+            arr[2] += 1;
+        }
+        
+        if(string[i] == 'T' || string[i] == 't'){
+            arr[3] += 1;
+        }
+        
+        i++;
+    }
 }
