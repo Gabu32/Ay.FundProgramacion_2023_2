@@ -29,8 +29,6 @@ void mostrarPalabrasFrecuencia(FILE *entrada, FILE **salida) {
             noAgregar = 0;
             continue;
         }
-        
-        palabra[i] = '\0'; 
         agregarPalabra(&vector, &tamano, palabra);
     }
     
